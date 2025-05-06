@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- code by webdevtrick ( https://webdevtrick.com ) -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="maint"> Contact Us</h1>
+        <div class="section animated bounceInLeft">
+            <div class="brandname">
+                <h3>RedStore</h3>
+                <ul>
+                    <li> +91 9986150951</li>
+                    <li>http://127.0.0.1:5500/contact.html</li>
+                    <li>RedStore.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Me</h3>
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <p>
+                        <label for="#">Name</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label for="#">Company</label>
+                        <input type="text" name="company">
+                    </p>
+                    <p>
+                        <label for="#">Email Address</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label for="#">Phone Number</label>
+                        <input type="text" name="phone">
+                    </p>
+                    <p class="full">
+                        <label for="#">Message</label>
+                        <textarea name="message" cols="30" rows="5"></textarea>
+                    </p>
+                    <p class="full">
+                        <button>Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "21sw0063.gourish@wfd.silveroaks.co.in",
+                Password : "MGRmgr1234567890@#",
+                To : 'gamecoders1official@gmail.com',
+                From : document.getElementById(email).value,
+                Subject : "New Contact Form Recieved",
+                Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
+</body>
+</html>

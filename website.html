@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+               <a href="website.html"></a> <img src="images/logo.png" width="125px">
+               <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="RestaurantBot"
+  agent-id="c51585c8-a9bb-4a36-924b-b057ba80109a"
+  language-code="en"
+></df-messenger>
+    
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="website.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" class="cart-img"></a>
+            <img src="images/menu.png" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Give Your Workout a New Style!</h1>
+                <p>Success isn't always about Grateness.<br> about Consistency. 
+                    Consistency hardwork gains Success. 
+                    Grateness will come</p>
+                    <a href="products.html" class="btn">Explore Now &#10154;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/image1.png">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!----------- featured catogaries ----------->
+
+ <div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="/images/category-1.jpg">
+            </div>
+            <div class="col-3">
+                <img src="/images/category-2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="/images/category-3.jpg">
+            </div>
+        </div>
+     </div>
+
+    </div>
+<!----------- featured products ----------->
+<div class="small-container">
+    <h2 class="title">Best Selling Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="productspage.html"><img src="images/product-1.jpg"></a>
+            <h4>Puma Red Printed Tshirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/3..jpg">
+            <h4>Women Office Outfit</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $69.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/3.jpg">
+            <h4>Boys Stylish Wear</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/5.jpg">
+            <h4>North Indian festive wear</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $80.00</p>
+        </div>
+        <!--------------------Latest Products------------------->
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-5.jpg">
+            <h4>Adidas Jogging Shoes</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-6.jpg">
+            <h4>Puma Black printed Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $69.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4>Tarmak Basketball Shoes</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Price = $50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/5mf.jpg">
+            <h4>Leather slippers</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $80.00</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-1.jpg">
+            <h4>Puma Red Printed Tshirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/4.jpg">
+            <h4>Army/Navy Desinged Tshirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $69.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/2wf.jpg">
+            <h4>Women Slippers</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/7mf.jpg">
+            <h4>Mens Formal office Shoes</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Price = $80.00</p>
+        </div>
+    </div>
+<!----------- offers ----------->  
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively available on RedStore</p>
+                    <h1>MI Smart wacth 5!</h1>
+                    <small>MI band 5 is having very intresting features for the<br> users to feel comfortable with the wacth......
+                    To know more purchase the MI band 5 now to enjoy the cool new features of the wacth.......................</small>
+                    <a href="/RedStore eccommerce/offerpage.html" class="btn">Buy Now &#36;</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <a href="https://www.godrej.com/"><img src="images/logo-godrej.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.coca-colacompany.com/"><img src="images/logo-coca-cola.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.oppo.com/in/"><img src="images/logo-oppo.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.phillips.com/?utm_source=bing&utm_medium=cpc&utm_campaign=Brand%7CEvergreen%7CEnglish%7CCore%7CExact&utm_term=phillipd&utm_content=All%7CA1%20-%20Misspelling"><img src="images/logo-philips.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.paypal.com/in/home"><img src="images/logo-paypal.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download our app for free on IOS and Android Phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our aim is to teach fashion to everyone in the world</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twiter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - GY Web Developers</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
